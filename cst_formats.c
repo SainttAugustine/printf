@@ -4,7 +4,7 @@
 * cst_formats - determines the format specifier to be used
 * *@s: format string argument
 * @ap: list of arguments
-* @index: position of character in format string
+* @i: position of character in format string
 *
 * Return: length of charcters printed
 */
