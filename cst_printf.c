@@ -2,9 +2,8 @@
 
 /**
 * cst_printf - produces output according to a format
-* 				writes output to stdout, the standard output stream
+*				writes output to stdout, the standard output stream
 * *@s: character string consisiting of format specifiers
-* 
 * Return: number of characters printed(excluding '\0')
 */
 int cst_printf(const char *s, ...)
@@ -16,7 +15,7 @@ int cst_printf(const char *s, ...)
 	len = 0;
 
 	va_start(ap, s);
-	while(s[index])
+	while (s[index])
 	{
 		if (s[index] == '%')
 		{
@@ -24,9 +23,10 @@ int cst_printf(const char *s, ...)
 		} else
 		{
 			len += cst_putchar(s[index]);
-			index++;
 		}
-		va_end(ap);
-		return (len);
+		index++;
 	}
+
+	va_end(ap);
+	return (len);
 }
