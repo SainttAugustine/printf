@@ -5,7 +5,7 @@
 * @n: number of charcters to be printed
 * Return: length of the characters printed to stdout
 */
-int cst_print_addr(unsigned long long n)
+int cst_print_addr(unsigned long n)
 {
 	int len;
 

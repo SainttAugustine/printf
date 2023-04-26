@@ -1,6 +1,6 @@
 #include "cst_printf.h"
 
-void cst_put_hex(unsigned long long n, char *radix);
+void cst_put_hex(unsigned long n, char *radix);
 
 /**
 * cst_put_hex - prints out hexadecimal characters
@@ -8,7 +8,7 @@ void cst_put_hex(unsigned long long n, char *radix);
 * *@radix: radix of the evaluated characters
 * Return: void
 */
-void cst_put_hex(unsigned long long n, char *radix)
+void cst_put_hex(unsigned long n, char *radix)
 {
 	if (n < 16)
 	{
@@ -29,7 +29,7 @@ void cst_put_hex(unsigned long long n, char *radix)
 * @format: format specifier in printf call
 *Return: length of characters printed in stdout
 */
-int cst_print_hex(unsigned long long n, char format)
+int cst_print_hex(unsigned long n, char format)
 {
 	char *radix_x;
 	char *radix_xx;
